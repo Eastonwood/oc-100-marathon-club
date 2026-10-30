@@ -261,6 +261,13 @@
   footer a{color:var(--gold-bright);text-decoration:none}
   footer a:hover{text-decoration:underline}
   footer .fine{margin-top:26px;padding-top:18px;border-top:1px solid #2c4472;font-size:12.5px;color:#7186ab;line-height:1.7}
+  .medal-wall{display:grid;grid-template-columns:repeat(10,1fr);gap:10px;margin:6px 0 26px;padding:14px;border:1px solid rgba(233,199,103,.45);border-radius:14px;background:#081426}
+  .medal-slot{position:relative;margin:0}
+  .medal-slot img{width:100%;height:auto;display:block;aspect-ratio:4/5;object-fit:cover;border-radius:8px;border:1px solid rgba(233,199,103,.25)}
+  .medal-slot .medal-num{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);background:rgba(6,15,34,.75);color:#e9c767;font-size:11px;line-height:1;padding:3px 7px;border-radius:20px}
+  .medal-slot.empty{aspect-ratio:4/5;border:1px dashed rgba(233,199,103,.4);border-radius:8px;display:flex;align-items:center;justify-content:center}
+  .medal-slot.empty .medal-num{position:static;transform:none;background:none;color:rgba(233,199,103,.5);font-size:13px;padding:0}
+  @media (max-width:760px){.medal-wall{grid-template-columns:repeat(5,1fr);gap:8px;padding:10px}}
 </style>
 </head>
 <body>
@@ -328,8 +335,110 @@
 <section id="mission">
   <div class="wrap">
     <div class="sec-head">
-      <h2 data-i18n="missionTitle">一百場全馬，是生活方式，不是目的</h2>
+      <h2 data-i18n="missionTitle">百場全馬，是生活方式，不是目的</h2>
       <div class="en">Our Mission</div>
+    </div>
+    <div class="medal-wall">
+      <figure class="medal-slot"><img src="images/medals/medal-01.jpg" alt="第1場獎牌" loading="lazy"><span class="medal-num">001</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-02.jpg" alt="第2場獎牌" loading="lazy"><span class="medal-num">002</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-03.jpg" alt="第3場獎牌" loading="lazy"><span class="medal-num">003</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-04.jpg" alt="第4場獎牌" loading="lazy"><span class="medal-num">004</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-05.jpg" alt="第5場獎牌" loading="lazy"><span class="medal-num">005</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-06.jpg" alt="第6場獎牌" loading="lazy"><span class="medal-num">006</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-07.jpg" alt="第7場獎牌" loading="lazy"><span class="medal-num">007</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-08.jpg" alt="第8場獎牌" loading="lazy"><span class="medal-num">008</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-09.jpg" alt="第9場獎牌" loading="lazy"><span class="medal-num">009</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-10.jpg" alt="第10場獎牌" loading="lazy"><span class="medal-num">010</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-11.jpg" alt="第11場獎牌" loading="lazy"><span class="medal-num">011</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-12.jpg" alt="第12場獎牌" loading="lazy"><span class="medal-num">012</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-13.jpg" alt="第13場獎牌" loading="lazy"><span class="medal-num">013</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-14.jpg" alt="第14場獎牌" loading="lazy"><span class="medal-num">014</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-15.jpg" alt="第15場獎牌" loading="lazy"><span class="medal-num">015</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-16.jpg" alt="第16場獎牌" loading="lazy"><span class="medal-num">016</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-17.jpg" alt="第17場獎牌" loading="lazy"><span class="medal-num">017</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-18.jpg" alt="第18場獎牌" loading="lazy"><span class="medal-num">018</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-19.jpg" alt="第19場獎牌" loading="lazy"><span class="medal-num">019</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-20.jpg" alt="第20場獎牌" loading="lazy"><span class="medal-num">020</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-21.jpg" alt="第21場獎牌" loading="lazy"><span class="medal-num">021</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-22.jpg" alt="第22場獎牌" loading="lazy"><span class="medal-num">022</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-23.jpg" alt="第23場獎牌" loading="lazy"><span class="medal-num">023</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-24.jpg" alt="第24場獎牌" loading="lazy"><span class="medal-num">024</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-25.jpg" alt="第25場獎牌" loading="lazy"><span class="medal-num">025</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-26.jpg" alt="第26場獎牌" loading="lazy"><span class="medal-num">026</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-27.jpg" alt="第27場獎牌" loading="lazy"><span class="medal-num">027</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-28.jpg" alt="第28場獎牌" loading="lazy"><span class="medal-num">028</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-29.jpg" alt="第29場獎牌" loading="lazy"><span class="medal-num">029</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-30.jpg" alt="第30場獎牌" loading="lazy"><span class="medal-num">030</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-31.jpg" alt="第31場獎牌" loading="lazy"><span class="medal-num">031</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-32.jpg" alt="第32場獎牌" loading="lazy"><span class="medal-num">032</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-33.jpg" alt="第33場獎牌" loading="lazy"><span class="medal-num">033</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-34.jpg" alt="第34場獎牌" loading="lazy"><span class="medal-num">034</span></figure>
+      <figure class="medal-slot"><img src="images/medals/medal-35.jpg" alt="第35場獎牌" loading="lazy"><span class="medal-num">035</span></figure>
+      <div class="medal-slot empty"><span class="medal-num">036</span></div>
+      <div class="medal-slot empty"><span class="medal-num">037</span></div>
+      <div class="medal-slot empty"><span class="medal-num">038</span></div>
+      <div class="medal-slot empty"><span class="medal-num">039</span></div>
+      <div class="medal-slot empty"><span class="medal-num">040</span></div>
+      <div class="medal-slot empty"><span class="medal-num">041</span></div>
+      <div class="medal-slot empty"><span class="medal-num">042</span></div>
+      <div class="medal-slot empty"><span class="medal-num">043</span></div>
+      <div class="medal-slot empty"><span class="medal-num">044</span></div>
+      <div class="medal-slot empty"><span class="medal-num">045</span></div>
+      <div class="medal-slot empty"><span class="medal-num">046</span></div>
+      <div class="medal-slot empty"><span class="medal-num">047</span></div>
+      <div class="medal-slot empty"><span class="medal-num">048</span></div>
+      <div class="medal-slot empty"><span class="medal-num">049</span></div>
+      <div class="medal-slot empty"><span class="medal-num">050</span></div>
+      <div class="medal-slot empty"><span class="medal-num">051</span></div>
+      <div class="medal-slot empty"><span class="medal-num">052</span></div>
+      <div class="medal-slot empty"><span class="medal-num">053</span></div>
+      <div class="medal-slot empty"><span class="medal-num">054</span></div>
+      <div class="medal-slot empty"><span class="medal-num">055</span></div>
+      <div class="medal-slot empty"><span class="medal-num">056</span></div>
+      <div class="medal-slot empty"><span class="medal-num">057</span></div>
+      <div class="medal-slot empty"><span class="medal-num">058</span></div>
+      <div class="medal-slot empty"><span class="medal-num">059</span></div>
+      <div class="medal-slot empty"><span class="medal-num">060</span></div>
+      <div class="medal-slot empty"><span class="medal-num">061</span></div>
+      <div class="medal-slot empty"><span class="medal-num">062</span></div>
+      <div class="medal-slot empty"><span class="medal-num">063</span></div>
+      <div class="medal-slot empty"><span class="medal-num">064</span></div>
+      <div class="medal-slot empty"><span class="medal-num">065</span></div>
+      <div class="medal-slot empty"><span class="medal-num">066</span></div>
+      <div class="medal-slot empty"><span class="medal-num">067</span></div>
+      <div class="medal-slot empty"><span class="medal-num">068</span></div>
+      <div class="medal-slot empty"><span class="medal-num">069</span></div>
+      <div class="medal-slot empty"><span class="medal-num">070</span></div>
+      <div class="medal-slot empty"><span class="medal-num">071</span></div>
+      <div class="medal-slot empty"><span class="medal-num">072</span></div>
+      <div class="medal-slot empty"><span class="medal-num">073</span></div>
+      <div class="medal-slot empty"><span class="medal-num">074</span></div>
+      <div class="medal-slot empty"><span class="medal-num">075</span></div>
+      <div class="medal-slot empty"><span class="medal-num">076</span></div>
+      <div class="medal-slot empty"><span class="medal-num">077</span></div>
+      <div class="medal-slot empty"><span class="medal-num">078</span></div>
+      <div class="medal-slot empty"><span class="medal-num">079</span></div>
+      <div class="medal-slot empty"><span class="medal-num">080</span></div>
+      <div class="medal-slot empty"><span class="medal-num">081</span></div>
+      <div class="medal-slot empty"><span class="medal-num">082</span></div>
+      <div class="medal-slot empty"><span class="medal-num">083</span></div>
+      <div class="medal-slot empty"><span class="medal-num">084</span></div>
+      <div class="medal-slot empty"><span class="medal-num">085</span></div>
+      <div class="medal-slot empty"><span class="medal-num">086</span></div>
+      <div class="medal-slot empty"><span class="medal-num">087</span></div>
+      <div class="medal-slot empty"><span class="medal-num">088</span></div>
+      <div class="medal-slot empty"><span class="medal-num">089</span></div>
+      <div class="medal-slot empty"><span class="medal-num">090</span></div>
+      <div class="medal-slot empty"><span class="medal-num">091</span></div>
+      <div class="medal-slot empty"><span class="medal-num">092</span></div>
+      <div class="medal-slot empty"><span class="medal-num">093</span></div>
+      <div class="medal-slot empty"><span class="medal-num">094</span></div>
+      <div class="medal-slot empty"><span class="medal-num">095</span></div>
+      <div class="medal-slot empty"><span class="medal-num">096</span></div>
+      <div class="medal-slot empty"><span class="medal-num">097</span></div>
+      <div class="medal-slot empty"><span class="medal-num">098</span></div>
+      <div class="medal-slot empty"><span class="medal-num">099</span></div>
+      <div class="medal-slot empty"><span class="medal-num">100</span></div>
     </div>
     <div class="prose">
       <p data-i18n="missionP1">OC 100 Marathon Club 由 <strong>吳棟（Easton Wood）</strong> 創立。他自 2008 年起長期堅持訓練，2009 年在上海完成人生首馬；此後十七年不曾停下腳步——最近三年開始，平均每個季度一場全馬，是他檢測日常有氧耐力與核心訓練效果的方式。</p>

@@ -21,8 +21,8 @@
     --navy:#0a1730;
     --navy-2:#0e2145;
     --navy-3:#12295a;
-    --gold:#c9a227;
-    --gold-bright:#e8c95c;
+    --gold:#ffd700;
+    --gold-bright:#ffd700;
     --paper:#f6f2e9;
     --paper-2:#efe9db;
     --ink:#1c2434;
@@ -79,7 +79,7 @@
     font-family:inherit;font-size:13px;font-weight:700;letter-spacing:.04em;
     padding:6px 13px;cursor:pointer;line-height:1.4;white-space:nowrap;
   }
-  .lang-toggle button+button{border-left:1px solid rgba(201,162,39,.45)}
+  .lang-toggle button+button{border-left:1px solid rgba(255,215,0,.45)}
   .lang-toggle button.active{background:var(--gold);color:#241a02}
   .lang-toggle button:focus-visible{outline:2px solid var(--gold-bright);outline-offset:2px}
   .lang-toggle button:hover:not(.active){color:var(--gold-bright)}
@@ -94,7 +94,7 @@
   /* ---------- hero ---------- */
   .hero{
     background:
-      radial-gradient(ellipse 80% 55% at 50% -10%, rgba(201,162,39,.16), transparent 60%),
+      radial-gradient(ellipse 80% 55% at 50% -10%, rgba(255,215,0,.16), transparent 60%),
       linear-gradient(180deg,var(--navy-2),var(--navy) 55%,#060f22);
     color:#eef0f4;text-align:center;
     padding:64px 20px 56px;
@@ -103,7 +103,7 @@
   .hero .badge{
     width:196px;height:196px;margin:0 auto 26px;border-radius:50%;object-fit:cover;
     border:3px solid var(--gold);
-    box-shadow:0 0 0 6px rgba(201,162,39,.18),0 18px 44px rgba(0,0,0,.5);
+    box-shadow:0 0 0 6px rgba(255,215,0,.18),0 18px 44px rgba(0,0,0,.5);
   }
   .hero h1{
     font-family:"Baloo 2","Noto Sans TC",sans-serif;font-weight:800;
@@ -124,7 +124,7 @@
   .progress-meta strong{font-family:"Noto Sans TC",system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;font-size:26px;color:#fff}
   .progress-meta .of{color:#93a5c4}
   .bar{height:12px;border-radius:999px;background:#1a2c52;margin-top:8px;overflow:hidden;border:1px solid #2c4472}
-  .bar i{display:block;height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,#a8841d,var(--gold-bright));transition:width 1.4s cubic-bezier(.22,.8,.3,1)}
+  .bar i{display:block;height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,#ffd700,var(--gold-bright));transition:width 1.4s cubic-bezier(.22,.8,.3,1)}
   .hero-stats{display:flex;justify-content:center;margin:40px auto 0;max-width:720px;flex-wrap:wrap}
   .hero-stats div{padding:6px 26px;border-left:1px solid #2c4472}
   .hero-stats div:first-child{border-left:none}
@@ -251,7 +251,7 @@
   .vision-points li{padding:10px 0 10px 22px;border-bottom:1px dashed var(--line);font-size:15px;position:relative}
   .vision-points li::before{content:"";position:absolute;left:2px;top:19px;width:8px;height:8px;background:var(--gold);border-radius:50%}
   .vision-points li:last-child{border-bottom:none}
-  .vision-note{margin-top:22px;padding:14px 18px;border-left:3px solid var(--gold);background:rgba(201,162,39,.08);font-size:15px}
+  .vision-note{margin-top:22px;padding:14px 18px;border-left:3px solid var(--gold);background:rgba(255,215,0,.08);font-size:15px}
   .vision-note a{color:var(--gold-bright);font-weight:700}
 
   footer{background:var(--navy);color:#aebbd6;border-top:3px solid var(--gold);padding:44px 0 36px;font-size:14px}

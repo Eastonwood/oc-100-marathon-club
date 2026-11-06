@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-<g transform="rotate(180 512 512)">
+<g transform="translate(0,1024) scale(1,-1)">
 <line x1="506" y1="968" x2="391" y2="691" stroke="#E30613" stroke-width="64" stroke-linecap="round"/>
 <line x1="391" y1="691" x2="548" y2="756" stroke="#FF7A00" stroke-width="64" stroke-linecap="round"/>
 <line x1="548" y1="756" x2="434" y2="479" stroke="#FFD400" stroke-width="64" stroke-linecap="round"/>

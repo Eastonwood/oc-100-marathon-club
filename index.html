@@ -136,6 +136,23 @@
   .hero-stats span{font-size:12.5px;color:#93a5c4;letter-spacing:.1em}
   @media (max-width:560px){.hero-stats div{padding:6px 14px}.hero-stats b{font-size:19px}}
 
+  .declaration{max-width:720px;margin:44px auto 0;text-align:left;background:rgba(6,15,34,.55);border:1px solid #2c4472;border-radius:14px;padding:30px 32px 26px}
+  .declaration h2{font-family:"Noto Sans TC",system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;font-size:clamp(22px,3.6vw,28px);color:var(--gold-bright);text-align:center;letter-spacing:.12em}
+  .declaration .dec-head{display:flex;align-items:center;justify-content:center;gap:18px}
+  .declaration .dec-badge{width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);flex:0 0 auto}
+  .declaration .dec-head-text{text-align:center}
+  .declaration .dec-en-title{text-align:center;font-size:12px;letter-spacing:.28em;color:#93a5c4;text-transform:uppercase;margin-top:8px}
+  .declaration .dec-motto{text-align:center;color:var(--gold-bright);font-weight:700;margin-top:16px;letter-spacing:.14em}
+  .declaration h3{color:var(--gold-bright);font-size:16px;margin:24px 0 8px}
+  .declaration p{color:#c3cee2;font-size:15px;line-height:1.85}
+  .declaration p+p{margin-top:10px}
+  .declaration .dec-mark{text-align:center;margin:22px 0 12px}
+  .declaration .dec-mark img{height:54px;width:auto}
+  .declaration .dec-note{color:var(--gold-bright);text-align:center}
+  .declaration .dec-closing{text-align:center;color:var(--gold-bright);font-weight:800;font-size:clamp(20px,3.4vw,26px);margin-top:26px;letter-spacing:.1em}
+  .declaration .dec-sign{text-align:center;color:#93a5c4;font-size:13px;margin-top:18px;line-height:1.8}
+  @media (max-width:560px){.declaration{padding:22px 18px}.declaration .dec-badge{width:48px;height:48px}.declaration .dec-head{gap:12px}}
+
   .hero-values-row{display:flex;align-items:center;justify-content:center;gap:48px;margin:34px auto 0;max-width:900px;text-align:left}
   .hero-values-row .badge{width:230px;height:230px;margin:0;flex:0 0 auto;border:0;box-shadow:none}
   .hero-values{border-left:3px solid var(--gold);padding-left:40px}
@@ -324,19 +341,30 @@
   <p class="lede" data-i18n="heroLede">我們幫助青少年與志同道合的家庭、跑者建立超長期主義：以科學的訓練與健康的生活方式，一場一場，完成一輩子一百場官方認可的全程馬拉松。</p>
   <span class="reg" data-i18n="heroReg">已註冊非營利組織 · Orange County, California</span>
 
-  <div class="progress-block">
-    <div class="progress-meta">
-      <span><span data-i18n="progressLabel">創始人百馬進度</span>&nbsp; <strong>35</strong> <span class="of" data-i18n="progressOf">/ 100 場</span></span>
-      <span class="of" data-i18n="progressSince">始於 2009 年上海首馬</span>
+  <div class="declaration">
+    <div class="dec-head">
+      <img class="dec-badge" src="images/oc100-club-badge.jpg" alt="OC 100 俱樂部徽章">
+      <div class="dec-head-text">
+        <h2 data-i18n="decTitle">俱樂部成立宣言</h2>
+        <p class="dec-en-title" data-i18n="decTitleEn">Founding Declaration</p>
+      </div>
+      <img class="dec-badge" src="images/jdbh-family-badge.jpg" alt="JD BH 家族文化徽章">
     </div>
-    <div class="bar"><i id="progressFill"></i></div>
-  </div>
-
-  <div class="hero-stats">
-    <div><b>35</b><span data-i18n="stat1Label">已完成全馬</span></div>
-    <div><b data-i18n="stat2Value">17 年</b><span data-i18n="stat2Label">自 2009 年首馬</span></div>
-    <div><b data-i18n="stat3Value">4 場</b><span data-i18n="stat3Label">每年固定賽事</span></div>
-    <div><b>3:30:45</b><span data-i18n="stat4Label">第 35 馬 · Long Beach</span></div>
+    <p class="dec-motto" data-i18n="decMotto">「一家人 · 一條心 · 一輩子 · 一百馬」</p>
+    <h3 data-i18n="decS1Title">【一、我們的起源：一顆跨越時空的種子】</h3>
+    <p data-i18n="decS1Body">一切源於童年記憶中《狐狸的長跑者》那個衝向終點的鏡頭。那時，一種莫名的力量在我體內湧動，種下了跑馬拉松的種子。起初，跑步是為了在足球場上更強悍；但在 2009 年遇見那位 89 歲、每天跑 20 公里的老先生後，我被徹底震撼——馬拉松不是體能的展現，而是對生命極限的敬畏。</p>
+    <h3 data-i18n="decS2Title">【二、我們的現狀：百馬征途的傳承】</h3>
+    <p data-i18n="decS2Body">從 2009 年首馬的 4 小時 1 分出發，直到 2026 年，我已完成 35 場全馬。距離「百馬」目標，還有 65 場。這不只是一個人的數字遊戲，更是我要帶領孩子們一起傳承的基因：樂向陽，永直前。</p>
+    <h3 data-i18n="decS3Title">【三、我們的理念：三位一體的生活方式】</h3>
+    <p data-i18n="decS3I1">一、傳承與價值：我們追求的不僅是獎牌，更是要將「樂觀與不屈」植入下一代的靈魂。</p>
+    <p data-i18n="decS3I2">二、科學與基石：我們信奉科學系統的訓練，這是抵達終點的唯一路徑，更是我們對身體的尊重。</p>
+    <p data-i18n="decS3I3">三、愛與共鳴：這是一場愛自己、愛家庭、愛社區的長征。我們用超越自我的行為，去感染身邊的每一個人。</p>
+    <h3 data-i18n="decS4Title">【四、我們的信仰】</h3>
+    <p data-i18n="decS4Body">我們大多數人都是如此平凡，但我們可以選擇做到比昨天更好的自己。或許改變微小得難以察覺，但我們一定——樂向陽，永直前！</p>
+    <div class="dec-mark"><img src="images/seven-fold-mark-v2.svg" alt="七彩心橋品牌標記"></div>
+    <p class="dec-note" data-i18n="decMarkNote">七彩心橋用愛包容著一切的折角和直線，就像訓練中遇到的瓶頸和達成目標所走的彎路——其實這就是成長和共鳴；願我們都有一座屬於自己的七彩心橋。</p>
+    <p class="dec-closing" data-i18n="decClosing">樂向陽，永直前！</p>
+    <p class="dec-sign"><span data-i18n="decSign">吳棟 (EASTON WOOD) · OC 100 Marathon Club 創始人</span><br><span data-i18n="decDate">2026 年 10 月 · 美國加州橙縣</span></p>
   </div>
 </header>
 
@@ -875,6 +903,23 @@
       stat3Value: "4 Races",
       stat3Label: "Fixed Races Every Year",
       stat4Label: "Marathon 35 \u00B7 Long Beach",
+      decTitle: "Founding Declaration",
+      decTitleEn: "俱樂部成立宣言",
+      decMotto: "One Family · One Heart · One Life · One Hundred Marathons",
+      decS1Title: "1. Our Origin: A Seed Across Time",
+      decS1Body: "It all began with a scene from my childhood — the final sprint in 'The Lonely Runner.' In that moment, an inexplicable force surged through me, planting the seed of running a marathon. At first, I ran to become stronger on the soccer field. But in 2009, I met an 89-year-old man who ran 20 kilometers every single day, and I was profoundly shaken — a marathon is not a showcase of fitness, but a reverence for the very limits of life.",
+      decS2Title: "2. Our Journey: Passing the Torch to 100",
+      decS2Body: "From my debut marathon in 2009 — 4 hours and 1 minute — to 2026, I have completed 35 marathons. Sixty-five remain on the journey to one hundred. This is far more than one man's numbers game; it is the gene I am determined to pass on to my children: joy faces the sun, forever straight ahead.",
+      decS3Title: "3. Our Philosophy: A Trinity of Life",
+      decS3I1: "1. Legacy and Values: We pursue more than medals — we strive to implant 'optimism and resilience' into the souls of the next generation.",
+      decS3I2: "2. Science and Foundation: We believe in scientific, systematic training — the only road to the finish line, and our profound respect for the body.",
+      decS3I3: "3. Love and Resonance: This is a long march of loving ourselves, our families, and our communities. Through the act of surpassing ourselves, we inspire everyone around us.",
+      decS4Title: "4. Our Belief",
+      decS4Body: "Most of us are perfectly ordinary — yet we can choose to be better than we were yesterday. The change may be too small to perceive, but of this we are certain — joy faces the sun, forever straight ahead!",
+      decMarkNote: "Seven-Colour Heart Bridge embraces every fold and every straight line with love, just like the bottlenecks in training and the detours on the way to our goals — that is growth and resonance; may we all have a Seven-Colour Heart Bridge of our own.",
+      decClosing: "Joy Faces the Sun, Forever Straight Ahead!",
+      decSign: "Dong Wu (EASTON WOOD) · Founder, OC 100 Marathon Club",
+      decDate: "October 2026 · Orange County, California",
       missionTitle: "100 Marathons Is a Way of Life, Not the End",
       missionP1: "OC 100 Marathon Club was founded by <strong>Dong Wu (Easton Wood)</strong>. He has trained consistently since 2008 and completed his first marathon in Shanghai in 2009; in the seventeen years since, he has never stopped \u2014 in the last three years, he has averaged one full marathon per quarter, which is how he tests his everyday aerobic endurance and core training.",
       missionP2: "The club is modeled on its founder\u2019s <strong>family culture</strong>: a father whose day-after-day training shapes his own children, and who hopes to pass that positive energy on to more families, individuals, and youth groups. We believe the real finish line is not the 100th race, but <strong>a healthy body, a disciplined life, and a warm family life together</strong>.",

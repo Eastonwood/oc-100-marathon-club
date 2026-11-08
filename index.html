@@ -151,7 +151,7 @@
   @keyframes spinSlow{to{transform:rotate(360deg)}}
   .spin-slow{animation:spinSlow 60s linear infinite;transform-origin:50% 50%}
   @media (prefers-reduced-motion: reduce){.spin-slow{animation:none}}
-  .declaration .dec-note{color:var(--gold-bright);text-align:center}
+  .declaration .dec-note{color:var(--gold-bright);text-align:center}p[data-i18n="decS4Body"]{color:var(--gold-bright)}
   .declaration .dec-closing{text-align:center;color:var(--gold-bright);font-weight:800;font-size:clamp(20px,3.4vw,26px);margin-top:26px;letter-spacing:.1em}
   .declaration .dec-sign{text-align:center;color:#93a5c4;font-size:13px;margin-top:18px;line-height:1.8}
   @media (max-width:560px){.declaration{padding:22px 18px}.declaration .dec-badge{width:48px;height:48px}.declaration .dec-head{gap:12px}}
@@ -363,9 +363,9 @@
     <p data-i18n="decS3I2">二、科學與基石：我們信奉科學系統的訓練，這是抵達終點的唯一路徑，更是我們對身體的尊重。</p>
     <p data-i18n="decS3I3">三、愛與共鳴：這是一場愛自己、愛家庭、愛社區的長征。我們用超越自我的行為，去感染身邊的每一個人。</p>
     <h3 data-i18n="decS4Title">【四、我們的信仰】</h3>
-    <p data-i18n="decS4Body">我們大多數人都是如此平凡，但我們可以選擇做到比昨天更好的自己。或許改變微小得難以察覺，但我們一定——樂向陽，永直前！</p>
+    <p data-i18n="decS4Body">我們大多數人都是如此平凡，但我們可以選擇做到比昨天更好的自己。或許改變微小得難以察覺，但我們一定</p>
+    <p class="dec-note" data-i18n="decMarkNote">用愛包容著一切的折角和直線，就像訓練中遇到的瓶頸和達成目標所走的彎路——其實這就是成長和共鳴；願我們都有一座屬於自己的七彩心橋。</p>
     <div class="dec-mark"><img class="spin-slow" src="images/seven-fold-mark-v2.svg" alt="七彩心橋品牌標記"></div>
-    <p class="dec-note" data-i18n="decMarkNote">七彩心橋用愛包容著一切的折角和直線，就像訓練中遇到的瓶頸和達成目標所走的彎路——其實這就是成長和共鳴；願我們都有一座屬於自己的七彩心橋。</p>
     <p class="dec-closing" data-i18n="decClosing">樂向陽，永直前！</p>
     <p class="dec-sign"><span data-i18n="decSign">吳棟 (EASTON WOOD) · OC 100 Marathon Club 創始人</span><br><span data-i18n="decDate">2026 年 10 月 · 美國加州橙縣</span></p>
   </div>
@@ -671,14 +671,14 @@
           </div>
         </div>
 <div class="doc">
-          <div class="info"><b data-i18n="doc3Title">俱樂部成立宣言（中文一頁版）</b><span>Founding Declaration · PDF · v1.1</span></div>
+          <div class="info"><b data-i18n="doc3Title">俱樂部成立宣言（中文一頁版）</b><span>Founding Declaration · PDF · v1.2</span></div>
           <div class="acts">
             <a class="btn" href="docs/03-俱樂部成立宣言（中文一頁版）.pdf" data-i18n="btnRead">閱讀</a>
             <a class="btn" href="docs/03-俱樂部成立宣言（中文一頁版）.pdf" download data-i18n="btnDownload">下載</a>
           </div>
         </div>
         <div class="doc">
-          <div class="info"><b data-i18n="doc4Title">Founding Declaration（英文一頁版）</b><span>Founding Declaration · English · PDF · v1.1</span></div>
+          <div class="info"><b data-i18n="doc4Title">Founding Declaration（英文一頁版）</b><span>Founding Declaration · English · PDF · v1.2</span></div>
           <div class="acts">
             <a class="btn" href="docs/04-Founding-Declaration（英文一頁版）.pdf" data-i18n="btnRead">閱讀</a>
             <a class="btn" href="docs/04-Founding-Declaration（英文一頁版）.pdf" download data-i18n="btnDownload">下載</a>
@@ -949,8 +949,8 @@
       decS3I2: "2. Science and Foundation: We believe in scientific, systematic training — the only road to the finish line, and our profound respect for the body.",
       decS3I3: "3. Love and Resonance: This is a long march of loving ourselves, our families, and our communities. Through the act of surpassing ourselves, we inspire everyone around us.",
       decS4Title: "4. Our Belief",
-      decS4Body: "Most of us are perfectly ordinary — yet we can choose to be better than we were yesterday. The change may be too small to perceive, but of this we are certain — joy faces the sun, forever straight ahead!",
-      decMarkNote: "Seven-Colour Heart Bridge embraces every fold and every straight line with love, just like the bottlenecks in training and the detours on the way to our goals — that is growth and resonance; may we all have a Seven-Colour Heart Bridge of our own.",
+      decS4Body: "Most of us are perfectly ordinary — yet we can choose to be better than we were yesterday. The change may be too small to perceive, but we will surely",
+      decMarkNote: "embrace every fold and every straight line with love, just like the bottlenecks in training and the detours on the way to our goals — that is growth and resonance; may we all have a Seven-Colour Heart Bridge of our own.",
       decClosing: "Joy Faces the Sun, Forever Straight Ahead!",
       decSign: "Dong Wu (EASTON WOOD) · Founder, OC 100 Marathon Club",
       decDate: "October 2026 · Orange County, California",

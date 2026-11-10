@@ -1170,6 +1170,44 @@
     if(btnZh) btnZh.addEventListener("click", function(){ setLang("zh"); });
     if(btnEn) btnEn.addEventListener("click", function(){ setLang("en"); });
   })();
+
+  /* Badge motto hearts: keep each hearts row exactly as wide as the motto text above it.
+     The heart images have large intrinsic widths, which otherwise stretch the
+     shrink-to-fit wrapper wider than the text. Measure the text and pin the row to it. */
+  (function(){
+    function mottoTextWidth(h){
+      var r = document.createRange();
+      r.selectNodeContents(h);
+      var w = r.getBoundingClientRect().width;
+      if(r.detach) r.detach();
+      return w;
+    }
+    function sync(){
+      document.querySelectorAll(".badge-motto-wrap").forEach(function(wrap){
+        var h = wrap.querySelector("h3");
+        var row = wrap.querySelector(".badge-hearts-row");
+        if(!h || !row) return;
+        var card = wrap.closest(".badge-card");
+        var maxW = 0;
+        if(card){
+          var cs = window.getComputedStyle(card);
+          maxW = card.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+        }
+        var w = mottoTextWidth(h);
+        if(maxW > 0) w = Math.min(w, maxW);
+        row.style.width = w.toFixed(1) + "px";
+      });
+    }
+    sync();
+    window.addEventListener("load", sync);
+    if(document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+    var rt;
+    window.addEventListener("resize", function(){ clearTimeout(rt); rt = setTimeout(sync, 150); });
+    ["langZh", "langEn"].forEach(function(id){
+      var b = document.getElementById(id);
+      if(b) b.addEventListener("click", function(){ setTimeout(sync, 0); });
+    });
+  })();
 </script>
 </body>
 </html>

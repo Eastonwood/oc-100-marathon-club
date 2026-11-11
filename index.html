@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -349,8 +349,8 @@
       <a href="#documents" data-i18n="navDocs">官方文件</a>
       <a href="#vision" data-i18n="navVision">主題渡假</a>
       <div class="lang-toggle" role="group" aria-label="Language / 語言切換">
-        <button type="button" id="langZh" class="active" aria-pressed="true">繁體</button>
-        <button type="button" id="langEn" aria-pressed="false">EN</button>
+        <button type="button" id="langZh" aria-pressed="false">繁體</button>
+        <button type="button" id="langEn" class="active" aria-pressed="true">EN</button>
       </div>
     </div>
   </div>
@@ -1113,7 +1113,7 @@
       }
     };
 
-    var currentLang = "zh";
+    var currentLang = "en";
     var zhStore = {};
     var zhAltStore = {};
     var translatable = document.querySelectorAll("[data-i18n]");
@@ -1169,6 +1169,7 @@
 
     if(btnZh) btnZh.addEventListener("click", function(){ setLang("zh"); });
     if(btnEn) btnEn.addEventListener("click", function(){ setLang("en"); });
+    setLang("en");
   })();
 
   /* Badge motto hearts: keep each hearts row exactly as wide as the motto text above it.

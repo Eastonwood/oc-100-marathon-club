@@ -27,7 +27,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700&family=Baloo+2:wght@700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    color-scheme: light dark;
+    color-scheme: light;
     --navy:#0a1730;
     --navy-2:#0e2145;
     --navy-3:#12295a;
@@ -41,17 +41,7 @@
     --card:#fffdf7;
     --chip:#ece4cf;
   }
-  @media (prefers-color-scheme: dark){
-    :root{
-      --paper:#081226;
-      --paper-2:#0a1730;
-      --ink:#eef0f4;
-      --ink-soft:#a9b4c8;
-      --line:#2a3c63;
-      --card:#0d1e40;
-      --chip:#16294f;
-    }
-  }
+  /* dark-mode variable flip removed 2026-11-13: it produced white text on light sections */
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   @media (prefers-reduced-motion: reduce){
@@ -168,7 +158,7 @@
   @media (max-width:560px){.declaration{padding:22px 18px}.declaration .dec-badge{width:48px;height:48px}.declaration .dec-head{gap:12px}}
 
   .hero-values-row{display:flex;align-items:center;justify-content:center;gap:48px;margin:34px auto 0;max-width:900px;text-align:left}
-  .hero-values-row .badge{width:230px;height:230px;margin:0;flex:0 0 auto;border:0;box-shadow:none}.hero-badge-wrap{position:relative;width:230px;height:230px;margin:0;flex:0 0 auto}.heart-glow{position:absolute;width:40px;height:40px;animation:heartGlow 2.4s linear infinite;pointer-events:none}.heart-glow svg{display:block;filter:blur(2px)}
+  .hero-values-row .badge{display:block;width:230px;height:230px;margin:0;flex:0 0 auto;border:0;box-shadow:none}.hero-badge-wrap{position:relative;width:230px;height:auto;margin:0;flex:0 0 auto}.heart-glow{position:absolute;width:40px;height:40px;animation:heartGlow 2.4s linear infinite;pointer-events:none}.heart-glow svg{display:block;filter:blur(2px)}
   .text-glow{position:absolute;width:140px;height:64px;background:radial-gradient(ellipse at center,rgba(255,215,0,.65),rgba(255,215,0,0) 70%);border-radius:50%;animation:heartGlow 2.4s linear infinite;pointer-events:none}
   .foot-badge-wrap .text-glow{width:38px;height:18px}@keyframes heartGlow{0%,10%{opacity:.95;filter:drop-shadow(0 0 10px currentColor)}20%,100%{opacity:0}}@media (prefers-reduced-motion: reduce){.heart-glow,.text-glow{animation:none;opacity:0}}
   .foot-badge-wrap{position:relative;width:64px;height:64px;flex:0 0 auto}

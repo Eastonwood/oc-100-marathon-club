@@ -144,6 +144,18 @@
   .declaration .dec-head-text{text-align:center}
   .declaration .dec-en-title{text-align:center;font-size:12px;letter-spacing:.28em;color:#93a5c4;text-transform:uppercase;margin-top:8px}
   .declaration .dec-motto{text-align:center;color:var(--gold-bright);font-weight:700;margin-top:16px;letter-spacing:.14em}
+  .declaration .dec-hearts-row{display:flex;align-items:center;margin:14px 0 4px}
+  .declaration .dec-hearts-row .bh{flex:1;display:flex;justify-content:center;min-width:0}
+  .declaration .dec-hearts-row img{width:42px;height:42px;display:block;animation:row-heart-blink 2.4s ease-in-out infinite}
+  .declaration .dec-hearts-row .bh:nth-child(1) img{animation-delay:0s}
+  .declaration .dec-hearts-row .bh:nth-child(2) img{animation-delay:.3s}
+  .declaration .dec-hearts-row .bh:nth-child(3) img{animation-delay:.6s}
+  .declaration .dec-hearts-row .bh:nth-child(4) img{animation-delay:.9s}
+  .declaration .dec-hearts-row .bh:nth-child(5) img{animation-delay:1.2s}
+  .declaration .dec-hearts-row .bh:nth-child(6) img{animation-delay:1.5s}
+  .declaration .dec-hearts-row .bh:nth-child(7) img{animation-delay:1.8s}
+  .declaration .dec-hearts-row .bh:nth-child(8) img{animation-delay:2.1s}
+  @media (max-width:560px){.declaration .dec-hearts-row img{width:30px;height:30px}}
   .declaration h3{color:var(--gold-bright);font-size:16px;margin:24px 0 8px}
   .declaration p{color:#c3cee2;font-size:15px;line-height:1.85}
   .declaration p+p{margin-top:10px}
@@ -405,6 +417,7 @@
       <img class="dec-badge" src="images/family-badge-unified-v1-clean.jpg" alt="JD BH 家族文化徽章">
     </div>
     <p class="dec-motto notranslate" data-i18n="decMotto" translate="no">「一家人 · 一條心 · 一輩子 · 一百馬」</p>
+    <div class="dec-hearts-row" aria-hidden="true"><span class="bh"><img src="images/embroidered-heart-red.png" alt="" aria-hidden="true"></span><span class="bh"><img src="images/embroidered-heart-rblue.png" alt="" aria-hidden="true"></span><span class="bh"><img src="images/embroidered-heart-orange-v2.png" alt="" aria-hidden="true"></span><span class="bh"><img src="images/embroidered-heart-green.png" alt="" aria-hidden="true"></span><span class="bh"><img src="images/embroidered-heart-pink.png" alt="" aria-hidden="true"></span><span class="bh"><img src="images/embroidered-heart-yellow-v2.png" alt="" aria-hidden="true"></span><span class="bh"><img src="images/embroidered-heart-lblue.png" alt="" aria-hidden="true"></span><span class="bh"><img src="images/embroidered-heart-purple.png" alt="" aria-hidden="true"></span></div>
     <h3 data-i18n="decS1Title">【一、我們的起源：童年種子】</h3>
     <p data-i18n="decS1Body">一切源於童年記憶中《孤獨的長跑者》那個衝向終點的鏡頭。那時，一種莫名的力量在我體內湧動，種下了跑馬拉松的種子。起初，跑步是為了在足球場上更強悍；但在 2009 年遇見那位 89 歲、每天跑 20 公里的老先生後，我被徹底震撼——馬拉松不是體能的展現，而是對生命極限的敬畏。</p>
     <h3 data-i18n="decS2Title">【二、我們的現狀：百馬征途】</h3>

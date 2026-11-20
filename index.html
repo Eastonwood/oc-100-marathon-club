@@ -337,6 +337,11 @@ html[lang="en"] .hb-arc-word:nth-of-type(6){left:75.8%;top:35.8%}
 .royal-frame-wrap{position:relative;display:block;width:min(700px,95vw);margin:0 auto 14px;aspect-ratio:1092/918;background:#0d1e3e}
 .royal-frame-badge{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);height:84%;aspect-ratio:1/1;object-fit:cover;display:block}
 .royal-frame-img{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.frame-corner{position:absolute;width:19%;height:auto;z-index:3;pointer-events:none}
+.fc-tl{left:-8px;top:-8px}.fc-tr{right:-8px;top:-8px;transform:scaleX(-1)}
+.fc-bl{left:-8px;bottom:-8px;transform:scaleY(-1)}.fc-br{right:-8px;bottom:-8px;transform:scale(-1,-1)}
+.fleur-mark{padding:0 0 10px}
+.fleur-mark img{width:54px;height:auto;display:block}
 .xmas-garland{display:flex;justify-content:center;padding:8px 0 0}
 .xmas-garland img{width:min(1150px,97vw);height:auto}
 .dec-crown{display:flex;justify-content:center;padding:2px 0 10px}
@@ -779,7 +784,7 @@ html[lang="en"] .hb-arc-word:nth-of-type(6){left:75.8%;top:35.8%}
 <div class="hb-trio" aria-hidden="true"><img class="spin-slow" src="images/seven-fold-mark-v2.svg" alt=""><img class="spin-slow" src="images/seven-fold-mark-v2.svg" alt=""><img class="spin-slow" src="images/seven-fold-mark-v2.svg" alt=""></div>
 <section id="documents" class="alt">
   <div class="wrap">
-    <div class="sec-head">
+    <div class="sec-head"><div class="fleur-mark" aria-hidden="true"><img src="images/royal-fleur-de-lis.png" alt=""></div>
       <h2 data-i18n="docsTitle">官方文件</h2>
       <div class="en">Official Documents</div>
       <p data-i18n="docsIntro">以下為俱樂部現行官方版本，中英雙語並行，開放線上閱讀與下載。</p>
@@ -1018,7 +1023,7 @@ html[lang="en"] .hb-arc-word:nth-of-type(6){left:75.8%;top:35.8%}
 </section>
 <section class="members-link">
   <div class="wrap" style="text-align:center;padding:24px 0">
-    <a href="members.html" class="royal-frame-wrap"><img class="royal-frame-badge" src="images/oc100-club-badge-square-v8.jpg" alt="心連心俱樂部徽章" loading="lazy"><img class="royal-frame-img" src="images/royal-gold-frame-bright.png" alt="" aria-hidden="true"></a>
+    <a href="members.html" class="royal-frame-wrap"><img class="royal-frame-badge" src="images/oc100-club-badge-square-v8.jpg" alt="心連心俱樂部徽章" loading="lazy"><img class="royal-frame-img" src="images/royal-gold-frame-bright.png" alt="" aria-hidden="true"><img class="frame-corner fc-tl" src="images/royal-corner.png" alt="" aria-hidden="true"><img class="frame-corner fc-tr" src="images/royal-corner.png" alt="" aria-hidden="true"><img class="frame-corner fc-bl" src="images/royal-corner.png" alt="" aria-hidden="true"><img class="frame-corner fc-br" src="images/royal-corner.png" alt="" aria-hidden="true"></a>
     <a class="btn solid" href="members.html" data-i18n="entryMembers">會員專區 · 社會價值與人文價值</a>
     <div class="en">Members · Social value and humanistic value</div>
   </div>

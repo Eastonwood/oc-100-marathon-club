@@ -168,6 +168,14 @@
 .hb-words-wrap{display:flex;align-items:center;justify-content:center;gap:32px;margin-top:16px}
 .hb-words{display:flex;flex-direction:column;justify-content:space-between;height:172px;padding:4px 0;font-size:21px;font-weight:700;letter-spacing:.35em;line-height:1.1;text-align:right}
 @media (max-width:560px){.hb-words-wrap{gap:20px}.hb-words{height:158px;font-size:17px;letter-spacing:.25em}}
+.hb-arc-wrap{position:relative;width:min(620px,96vw);aspect-ratio:1240/860;margin:20px auto 0;container-type:inline-size}
+.hb-arc-line{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hb-arc-mark{position:absolute;left:31.85%;top:31.98%;width:36.29%;height:auto;display:block}
+.hb-arc-word{position:absolute;transform:translate(-50%,-50%);font-weight:700;font-size:3.71cqw;letter-spacing:.18em;line-height:1.1;white-space:nowrap}
+html[lang="en"] .hb-arc-word{font-size:2.3cqw;letter-spacing:.02em}
+html[lang="en"] .hb-arc-word:nth-of-type(2){left:31.4%;top:37.2%}
+html[lang="en"] .hb-arc-word:nth-of-type(4){top:24.2%}
+html[lang="en"] .hb-arc-word:nth-of-type(6){left:68.6%;top:37.2%}
 @media (max-width:560px){.hb-trio{gap:26px;padding:22px 0 2px}.hb-trio img{width:52px;height:52px}}
   @media (prefers-reduced-motion: reduce){.spin-slow{animation:none}}
   .declaration .dec-note{color:var(--gold-bright);text-align:center}p[data-i18n="decS4Body"]{color:var(--gold-bright)}
@@ -954,7 +962,17 @@
     <div class="sec-head">
       <h2 data-i18n="visionTitle">洛杉磯橙縣爾灣運動恢復和足球主題渡假俱樂部（創建中）</h2>
       <div class="en">Themed Resort</div>
-      <div class="hb-words-wrap"><div class="hb-words"><span style="color:#E30613" data-i18n="hbW1">熱愛</span><span style="color:#FF7A00" data-i18n="hbW2">樂觀</span><span style="color:#FFD400" data-i18n="hbW3">家庭</span><span style="color:#00A651" data-i18n="hbW4">成長</span><span style="color:#0072CE" data-i18n="hbW5">科學</span><span style="color:#8B84E8" data-i18n="hbW6">自律</span><span style="color:#7B2CBF" data-i18n="hbW7">堅持</span></div><img class="spin-slow" src="images/seven-fold-mark-v2.svg" alt="渡假俱樂部品牌標記 — 七折七彩線條" style="width:180px;max-width:60%;height:auto;display:inline-block"></div>
+      <div class="hb-arc-wrap">
+<svg class="hb-arc-line" viewBox="0 0 1240 860" preserveAspectRatio="none" aria-hidden="true"><path d="M 358 491 A 262 262 0 0 1 882 491" fill="none" stroke="rgba(116,140,190,.35)" stroke-width="3"/></svg>
+<img class="spin-slow hb-arc-mark" src="images/seven-fold-mark-v2.svg" alt="渡假俱樂部品牌標記 — 七折七彩線條">
+<span class="hb-arc-word" style="left:29.3%;top:51.8%;color:#E30613" data-i18n="hbW1">熱愛</span>
+<span class="hb-arc-word" style="left:33.3%;top:39.4%;color:#FF7A00" data-i18n="hbW2">樂觀</span>
+<span class="hb-arc-word" style="left:40.7%;top:30.7%;color:#FFD400" data-i18n="hbW3">家庭</span>
+<span class="hb-arc-word" style="left:50%;top:27.7%;color:#00A651" data-i18n="hbW4">成長</span>
+<span class="hb-arc-word" style="left:59.3%;top:30.7%;color:#0072CE" data-i18n="hbW5">科學</span>
+<span class="hb-arc-word" style="left:66.7%;top:39.4%;color:#8B84E8" data-i18n="hbW6">自律</span>
+<span class="hb-arc-word" style="left:70.7%;top:51.8%;color:#7B2CBF" data-i18n="hbW7">堅持</span>
+</div>
       <p data-i18n="markNote" style="text-align:center;max-width:640px;margin:16px auto 0;font-size:14.5px;line-height:1.9;color:var(--ink)"><strong>七彩心橋</strong>用愛包容著一切的折角和直線，就像訓練中遇到的瓶頸和達成目標所走的彎路——其實這就是成長和共鳴；願我們都有一座屬於自己的七彩心橋。</p>
     </div>
     <div class="vision-grid">

@@ -41,6 +41,11 @@ a{color:#ffd700}
 .card-hearts-row .bh:nth-child(8) img{animation-delay:2.1s}
 @keyframes row-heart-blink{0%,100%{filter:brightness(1) drop-shadow(0 0 0 rgba(255,215,0,0));transform:scale(1)}50%{filter:brightness(1.32) drop-shadow(0 0 12px rgba(255,205,60,.9));transform:scale(1.14)}}
 @media (prefers-reduced-motion: reduce){.card-hearts-row img{animation:none}}
+
+/* dragon rope frames (preview round 2) */
+.card{border:none;position:relative;}
+.card::before{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:url('images/dragon-band-v5.png') top center/100% auto no-repeat,url('images/dragon-band-v5.png') bottom center/100% auto no-repeat,url('images/dragon-band-v5v.png') left center/auto 100% no-repeat,url('images/dragon-band-v5v.png') right center/auto 100% no-repeat}
+
 </style></head><body><div class="card">
 <img class="badge" src="images/oc100-club-badge-square-v8.jpg" alt="OC 100 club badge">
 <img class="badge" src="images/dragon-badge-unified-v3.jpg" alt="Seven-colour dragon badge">

@@ -55,6 +55,10 @@ h2::after{content:"";display:block;width:100%;aspect-ratio:7440/122;background:u
 .langbtn{border:none;position:relative;}
 .langbtn::before{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:url('images/dragon-band-v5.png') top center/100% auto no-repeat,url('images/dragon-band-v5.png') bottom center/100% auto no-repeat,url('images/dragon-band-v5v.png') left center/auto 100% no-repeat,url('images/dragon-band-v5v.png') right center/auto 100% no-repeat}
 
+/* rope thickness 1.5px (Easton 2026-11-23) */
+h2::after{aspect-ratio:auto;height:1.5px}
+.foot::before{aspect-ratio:auto;height:1.5px}
+.notice::before,.stat::before,.langbtn::before{background:url('images/dragon-band-v5.png') top center/100% 1.5px no-repeat,url('images/dragon-band-v5.png') bottom center/100% 1.5px no-repeat,url('images/dragon-band-v5v.png') left center/1.5px 100% no-repeat,url('images/dragon-band-v5v.png') right center/1.5px 100% no-repeat}
 </style></head><body class="lang-en"><div class="wrap">
 <div class="notice"><a href="index.html" style="color:#ffd700"><span class="zh">← 回首頁</span> <span class="en">Back to home</span></a></div>
 <div class="center" style="margin:8px 0 0"><button id="langZh" class="langbtn" type="button">繁體</button><button id="langEn" class="langbtn active" type="button">English</button></div>

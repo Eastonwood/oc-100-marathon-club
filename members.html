@@ -37,7 +37,17 @@
   .contact { text-align: center; margin-top: 40px; }
   .contact a { color: #ffd700; }
   footer { text-align: center; color: #8a93a8; margin-top: 48px; font-size: 0.9em; }
-.medallion-mark{text-align:center;padding:12px 0 4px}.medallion-mark img{width:min(180px,44vw);height:auto}</style>
+.medallion-mark{text-align:center;padding:12px 0 4px}.medallion-mark img{width:min(180px,44vw);height:auto}
+/* dragon rope lines (preview) */
+h2{border-bottom:none}
+h2::after{content:"";display:block;width:100%;aspect-ratio:7440/122;background:url('images/dragon-band-v5.png') center/100% 100% no-repeat;margin-top:8px}
+/* dragon rope frames (preview round 2) */
+.notice{border:none;position:relative;}
+.notice::before{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:url('images/dragon-band-v5.png') top center/100% auto no-repeat,url('images/dragon-band-v5.png') bottom center/100% auto no-repeat,url('images/dragon-band-v5v.png') left center/auto 100% no-repeat,url('images/dragon-band-v5v.png') right center/auto 100% no-repeat}
+.vision{border:none;position:relative;}
+.vision::before{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:url('images/dragon-band-v5.png') top center/100% auto no-repeat,url('images/dragon-band-v5.png') bottom center/100% auto no-repeat,url('images/dragon-band-v5v.png') left center/auto 100% no-repeat,url('images/dragon-band-v5v.png') right center/auto 100% no-repeat}
+
+</style>
 </head>
 <body>
 <div class="wrap">

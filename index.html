@@ -497,9 +497,10 @@ footer{background-size:100% 1.5px}
 .ms-trigrams .tg svg{width:34px;height:auto;display:block}
 .ms-chain{position:relative;width:30px}
 .ms-chain-rot{position:absolute;left:50%;top:50%;width:var(--stripH);transform:translate(-50%,-50%) rotate(90deg)}
-.dragon-frame-in{display:flex;justify-content:center;padding:8px 0 34px}
-.dragon-spin-wrap{position:relative;display:block;width:min(430px,84%)}
-.dragon-spin-wrap>img{width:100%;display:block}
+.stack-frame-wrap.dragon-frame-wrap{position:relative;padding:0;aspect-ratio:1000/1018}
+.dragon-frame-in{position:absolute;inset:0}
+.dragon-spin-wrap{position:absolute;left:6.09%;top:7.14%;width:87.92%;height:86.38%}
+.dragon-spin-wrap>img{width:100%;height:100%;display:block}
 .dragon-spin-wrap .taiji-spin{left:68.9%;top:23.2%;width:13%}
 </style>
 </head>
@@ -735,7 +736,7 @@ footer{background-size:100% 1.5px}
 <div class="royal-divider" aria-hidden="true"><img src="images/royal-scroll-ornament-v2.png" alt=""></div>
 <section id="badges" class="alt">
   <div class="wrap">
-    <div class="stack-frame-wrap"><img class="stack-frame-img" src="images/royal-gold-frame-v3.png" alt="" aria-hidden="true"><div class="dragon-frame-in"><span class="dragon-spin-wrap"><img src="images/dragon-badge-taiji-v1.jpg" alt="七彩祥龍徽章" data-i18n-alt="navBadgeAlt"><span class="taiji-spin"><img src="images/taiji-spin-v1.png" alt="" aria-hidden="true"></span></span></div></div>
+    <div class="stack-frame-wrap dragon-frame-wrap"><img class="stack-frame-img" src="images/royal-gold-frame-v3.png" alt="" aria-hidden="true"><div class="dragon-frame-in"><span class="dragon-spin-wrap"><img src="images/dragon-badge-taiji-v1.jpg" alt="七彩祥龍徽章" data-i18n-alt="navBadgeAlt"><span class="taiji-spin"><img src="images/taiji-spin-v1.png" alt="" aria-hidden="true"></span></span></div></div>
     <div class="sec-head">
       <p><b>心心相連俱樂部徽章：</b>這枚徽章代表我們的價值觀——讓人與人之間心手相連。<br>Eight-Heart Club Badge: this badge represents our values — connecting people heart and hand.</p>
       <p><b>愛是一切家庭徽章：</b>這枚徽章代表我們的家庭文化與價值觀——善良、誠實、勤奮、堅持，愛是一切，是家的根源。<br>Eight-Heart Family Badge: this badge represents our family culture and values — kindness, honesty, diligence, perseverance, love is everything, the root of home.</p>
